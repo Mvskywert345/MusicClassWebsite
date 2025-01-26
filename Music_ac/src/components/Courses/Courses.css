@@ -1,0 +1,98 @@
+.courses {
+    margin: 60px auto; /* Adjusted margin */
+    width: 90%; /* Increased width for better spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content */
+    gap: 20px; /* Adjusted spacing for better layout */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+.program {
+    flex-basis: 30%;  /* Ensure three boxes fit in a row */
+    max-width: 320px;  /* Adjusted max width */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    background: #f9f9f9;
+    padding: 15px;
+}
+
+.program:hover {
+    transform: translateY(-5px);
+}
+
+.program img {
+    width: 100%;  /* Ensure images take full width of their container */
+    height: 280px;  /* Adjusted height to maintain consistency */
+    object-fit: cover;  /* Maintain aspect ratio without distortion */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.program h3 {
+    font-size: 1.4rem;
+    margin: 10px 0 8px;
+    color: #333;
+}
+
+.program p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Heading style */
+.courses h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.courses h2::after {
+    content: '';
+    width: 80px;
+    height: 5px;
+    background-color: #212EA0;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .program {
+        flex-basis: 45%; /* Two items per row on medium screens */
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .courses {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;  /* More space on smaller screens */
+    }
+
+    .program {
+        flex-basis: 90%; /* Full width on smaller screens */
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .program img {
+        width: 100%;  /* Full width for images on small screens */
+        height: 200px;  /* Keep consistent image height */
+    }
+}
