@@ -68,7 +68,7 @@ const Contact = () => {
           Contact for details, feel free to reach out through the contact form or find our contact information below.
         </p>
         <ul>
-          <li><img src={mail_icon} alt="Mail Icon" className="contact-icon" /> ssrecords905@gmail.com</li>
+          <li><img src={mail_icon} alt="Mail Icon" className="contact-icon" /> <a href="mailto:ssrecords905@gmail.com">ssrecords905@gmail.com</a></li>
           <li><img src={phone_icon} alt="Phone Icon" className="contact-icon" /> +917055453498</li>
           <li><img src={location_icon} alt="Location Icon" className="contact-icon" /> Mewati Complex, Dhanaura Road, Chopla, Gajraula (244235) UP.</li>
         </ul>
