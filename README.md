@@ -1,4 +1,4 @@
-# Shadan Music Academy Website
+#  Music Academy Website
 
 ## Overview
 Shadan Music Academy's website is designed to showcase passion for music education and provide visitors with information about our courses, faculty, and ways to contact us. The website is built using React and offers a user-friendly experience across devices.
