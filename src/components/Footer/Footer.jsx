@@ -8,7 +8,7 @@ function Footer() {
         </p>
         <ul>
             <li>
-                Term of Services 
+                Term & Services 
             </li>
             <li>
                 Privacy Policy
