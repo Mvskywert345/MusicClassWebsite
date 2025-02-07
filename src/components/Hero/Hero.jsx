@@ -9,9 +9,10 @@ const Hero = () => {
       <div className='hero-text'>
         <h1> We Ensure Music Is accessible to everyone</h1>
         <p>Unlock Your Musical Journey – Anytime, Any Age!</p>
-        <button className="btn">
-  <Link to="/courses">Explore More</Link>
-</button>
+      
+        <button className="btn" onClick={() => document.getElementById("courses").scrollIntoView({ behavior: "smooth" })}>
+        Explore More
+        </button>
        
       </div>
     </div>
