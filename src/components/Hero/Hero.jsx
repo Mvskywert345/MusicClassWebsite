@@ -1,5 +1,7 @@
 import React from 'react'
 import './Hero.css'
+import { Link } from "react-router-dom";
+
 
 const Hero = () => {
   return (
@@ -7,10 +9,9 @@ const Hero = () => {
       <div className='hero-text'>
         <h1> We Ensure Music Is accessible to everyone</h1>
         <p>Unlock Your Musical Journey – Anytime, Any Age!</p>
-        <button className='btn'> <Link to="courses" smooth={true} offset={-260} duration={500}>
-            Courses
-          Explore more   </Link>
-        </button>
+        <button className="btn">
+  <Link to="/courses">Explore More</Link>
+</button>
        
       </div>
     </div>
