@@ -7,7 +7,10 @@ const Hero = () => {
       <div className='hero-text'>
         <h1> We Ensure Music Is accessible to everyone</h1>
         <p>Unlock Your Musical Journey – Anytime, Any Age!</p>
-        <button className='btn'>Explore more</button>
+        <button className='btn'> <Link to="courses" smooth={true} offset={-260} duration={500}>
+            Courses
+          Explore more   </Link>
+        </button>
        
       </div>
     </div>
