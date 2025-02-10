@@ -1,4 +1,4 @@
-.hero{
+.hero {
     width: 100vw;
     min-height: 100vh; 
     margin: 0; 
@@ -11,36 +11,58 @@
     display: flex;
     color: #fff;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    text-align: center; /* Center text properly */
+    padding: 20px; /* Add padding for better spacing on smaller screens */
+}
 
-.hero-text{
+.hero-text {
     text-align: center;
     max-width: 800px;
+    padding: 0 20px; /* Ensure content is not touching the screen edges */
 }
-.hero-text h1{
+
+.hero-text h1 {
     font-size: 60px;
-    font-weight:600 ;
-}
-.hero-text p{
-    max-width:700px ;
-    margin: 10px auto 20px ;
-    line-height:1.4;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
-@media (max-width:850px){
-    .hero-text h1{
-        font-size:40px;
+.hero-text p {
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 850px) {
+    .hero-text h1 {
+        font-size: 40px;
     }
 }
-@media (max-width:650px){
-    .hero-text h1{
-        font-size:30px;
-        max-width:400px ;
-        margin:auto;
 
+@media (max-width: 650px) {
+    .hero-text h1 {
+        font-size: 30px;
+        max-width: 400px;
+        margin: auto;
     }
-    .hero-text p{
+    .hero-text p {
         font-size: 14px;
         margin: 15px auto 30px;
+    }
+}
+
+/* 🔥 Extra Small Screens (phones under 450px) */
+@media (max-width: 450px) {
+    .hero {
+        padding: 40px 10px; /* Reduce padding for small devices */
+    }
+    .hero-text h1 {
+        font-size: 26px;
+    }
+    .hero-text p {
+        font-size: 12px;
     }
 }

@@ -1,13 +1,37 @@
-.footer{
+.footer {
     margin: 10px auto;
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #797979;
-    padding: 15px o;
+    padding: 15px 0;
 }
-.footer ul li{
+
+/* Footer list */
+.footer ul {
+    padding: 0; /* Removes default padding */
+}
+
+.footer ul li {
     list-style: none;
     display: inline-block;
     margin-left: 20px;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack elements on small screens */
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer ul {
+        margin-top: 10px;
+    }
+
+    .footer ul li {
+        margin: 5px; /* Adjusted for better spacing */
+    }
 }
